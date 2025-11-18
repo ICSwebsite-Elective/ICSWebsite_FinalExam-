@@ -1,0 +1,186 @@
+:root{
+    --dragon-bg: #f0f8ff;
+    --dragon-text: #00008b;
+
+    --panther-bg: #333;
+    --panther-text: #f8f9fa;
+    --panther-accent: #ffd700;
+
+    --kitty-bg: #fffacd;
+    --kitty-text: #ffa500;
+    --kitty-accent: #008000;
+
+    --ninja-bg: #f0fff0;
+    --ninja-text: #228b22;
+    --ninja-accent: #98fb98;
+}
+
+/* Page base */
+body {
+    background-color: var(--dragon-bg);
+    color: inherit;
+}
+
+/* Theme bodies */
+body.black-panthers-theme {
+    background-color: var(--panther-bg);
+    color: var(--panther-text);
+}
+
+body.yellow-kitty-theme {
+    background-color: var(--kitty-bg);
+}
+
+body.green-ninja-theme {
+    background-color: var(--ninja-bg);
+}
+
+/* Generic mascot-ready base used by all themes */
+.mascot-ready {
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+
+/* Dragon */
+.custom-blue-text { color: var(--dragon-text); }
+
+/* Black Panthers */
+.custom-panther-text { color: var(--panther-accent); }
+
+.mascot-ready.panther-ready {
+    color: #00ff00;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.8);
+}
+
+/* Yellow Kitty */
+.custom-kitty-text {
+    color: var(--kitty-text);
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.mascot-ready.kitty-ready {
+    color: var(--kitty-accent);
+    font-size: 1.25rem;
+    border-bottom: 3px solid var(--kitty-text);
+    padding-bottom: 5px;
+}
+
+/* Green Ninja */
+.custom-ninja-text {
+    color: var(--ninja-text);
+    letter-spacing: 2px;
+}
+
+.mascot-ready.ninja-ready {
+    color: #000;
+    background-color: var(--ninja-accent);
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,255,0,0.5);
+}
+
+/* Reduced motion preference */
+@media (prefers-reduced-motion: reduce) {
+    .mascot-ready { transition: none; }
+}
+
+/* HERO SECTION (Updated) */
+.hero-section {
+    min-height: 55vh;
+    padding-top: 30px;
+    padding-bottom: 20px;
+}
+
+.hero-section .row {
+    align-items: center;
+}
+
+.hero-student-img {
+    max-width: 75%;
+    position: relative;
+    z-index: 2;
+    margin-top: -30px;
+}
+
+.hero-bg-shape {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    background: #fbd640;
+    border-radius: 50%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-30%, -50%);
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.hero-section h1,
+.hero-section p,
+.hero-section a {
+    margin-top: -10px;
+}
+
+/* ——————————————————————————————— */
+/* ⭐ SAKOLA-STYLE DARK HERO SECTION ⭐ */
+/* ——————————————————————————————— */
+
+.hero-dark {
+    position: relative;
+    background: url('bg-campus.jpg') center/cover no-repeat;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    padding: 70px 0;
+}
+
+/* Dark Overlay */
+.hero-dark .hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(5, 10, 30, 0.75);
+    z-index: 1;
+}
+
+/* Content Above Overlay */
+.hero-dark .hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+/* Text Styling */
+.hero-subtitle {
+    color: #a8c7ff;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.hero-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-top: 10px;
+    line-height: 1.2;
+}
+
+.hero-desc {
+    margin: 20px 0;
+    font-size: 1.1rem;
+    max-width: 90%;
+    opacity: 0.9;
+}
+
+/* Button */
+.hero-btn {
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+
+/* Right Image */
+.hero-students-img {
+    width: 85%;
+    max-width: 420px;
+    object-fit: contain;
+    filter: drop-shadow(0 8px 20px rgba(0,0,0,0.5));
+}

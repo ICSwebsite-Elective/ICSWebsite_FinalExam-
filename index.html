@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CIT College of Information Technology | Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="images/cit-favicon.png"> 
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">CIT College</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About CIT</a></li>
+                        <li class="nav-item"><a class="nav-link" href="faculty.html">The Faculty</a></li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Year Levels
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="black-panthers.html">Black Panthers</a></li>
+                                <li><a class="dropdown-item" href="yellow-kitty.html">Yellow Kitty</a></li>
+                                <li><a class="dropdown-item" href="green-ninja.html">Green Ninja</a></li>
+                                <li><a class="dropdown-item" href="blue-dragon.html">Blue Dragon</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container-fluid mt-5 pt-5">
+
+        <!-- ================= HERO SECTION ================= -->
+     <!-- ================= HERO SECTION (UPDATED) ================= -->
+<section class="hero-dark">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+        <div class="row align-items-center">
+
+            <!-- LEFT TEXT -->
+            <div class="col-md-6 text-white">
+                <h1 class="hero-title">Empowering the Next Generation of Tech Professionals</h1>
+                <p class="hero-desc my-3">
+                    Where creativity meets innovation.<br>
+                    Where beginners become experts.<br>
+                    Where students transform into digital heroes.
+                </p>
+                <a href="#" class="btn btn-primary hero-btn me-2">Enroll Now</a>
+                <a href="#" class="btn btn-outline-light hero-btn">Explore Programs</a>
+            </div>
+
+            <!-- RIGHT IMAGE -->
+            <div class="col-md-6 text-center">
+                <img src="hero-tech-mascots.png" class="hero-students-img" alt="Abstract tech + mascots" style="max-width: 100%; height: auto;">
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+        <!-- ================= WELCOME SECTION ================= -->
+   
+<section class="container my-5 text-center">
+    <h1 class="display-5 fw-bold">Welcome to the Institute for Computer Studies</h1>
+    <p class="lead my-4">
+        Step into a world of innovation, creativity, and technological excellence. 
+        Our program is designed to guide students through a progressive, skill-building journey—each year represented by a unique emblem that symbolizes growth, strength, and mastery in the digital realm.
+    </p>
+    <a href="about.html" class="btn btn-primary btn-lg mt-3">Learn More About Us</a>
+</section>
+
+
+<!-- ================= YEAR LEVELS SHOWCASE ================= -->
+<section class="container my-5 text-center">
+    <h2 class="mb-4 fw-bold">Explore Our Year Levels</h2>
+    <p class="lead mb-5">
+        Each year represented by a unique emblem that symbolizes growth, strength, and mastery in the digital realm.
+    </p>
+
+    <div class="row g-4">
+        <!-- Year 1 -->
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <img src="black-panther.png" class="card-img-top" alt="Black Panthers">
+                <div class="card-body">
+                    <h5 class="card-title">Year 1: Black Panthers</h5>
+                    <p class="card-text">Building foundational skills and exploring core concepts.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Year 2 -->
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <img src="yellow-kitty.png" class="card-img-top" alt="Yellow Kitty">
+                <div class="card-body">
+                    <h5 class="card-title">Year 2: Yellow Kitty</h5>
+                    <p class="card-text">Developing intermediate skills and practical experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Year 3 -->
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <img src="green-ninja.png" class="card-img-top" alt="Green Ninja">
+                <div class="card-body">
+                    <h5 class="card-title">Year 3: Green Ninja</h5>
+                    <p class="card-text">Advancing expertise and preparing for complex projects.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Year 4 -->
+        <div class="col-md-3">
+            <div class="card border-0 shadow-sm">
+                <img src="blue-dragon.png" class="card-img-top" alt="Blue Dragon">
+                <div class="card-body">
+                    <h5 class="card-title">Year 4: Blue Dragon</h5>
+                    <p class="card-text">Mastery and innovation, ready to enter the professional world.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <!-- ================= CAROUSEL (MOVED TO BOTTOM) ================= -->
+        <section class="row my-5">
+            <div class="col-12 p-0">
+                <div id="citCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <a href="about.html" class="stretched-link">
+                                <img src="https://images.unsplash.com/photo-1516321497487-e288fb19713f?w=3000"
+                                     class="d-block w-100"
+                                     style="max-height: 450px; object-fit: cover;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Innovate. Create. Lead.</h3>
+                                    <p>Join the next generation of tech experts.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="black-panthers.html" class="stretched-link">
+                                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1200&h=450&fit=crop"
+                                     class="d-block w-100"
+                                     style="max-height: 450px; object-fit: cover;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Code Your Future</h3>
+                                    <p>Hands-on learning with industry tools.</p>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="carousel-item">
+                            <a href="#">
+                                <img src="https://scontent.fbxu1-1.fna.fbcdn.net/v/t39.30808-6/503535770_3122733814549721_8015523986813255012_n.png?_nc_cat=111&ccb=1-7&_nc_sid=2285d6"
+                                     class="d-block w-100"
+                                     style="max-height: 450px; object-fit: cover;">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h3>Code Your Future</h3>
+                                    <p>Hands-on learning with industry tools.</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <button class="carousel-control-prev" type="button" data-bs-target="#citCarousel" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#citCarousel" data-bs-slide="next">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ================= STUDENT LIFE SECTION ================= -->
+<section class="container my-5 text-center">
+    <h2 class="mb-3 fw-bold">STUDENT LIFE</h2>
+    <h4 class="mb-4 text-secondary">A Community of Coders, Creators, and Innovators</h4>
+    <p class="lead mb-4">
+        At the Institute of Computer Studies, student life goes beyond classrooms and laboratories. 
+        We cultivate an environment where learners grow socially, academically, and professionally—supported by vibrant organizations, competitions, and recognition programs.
+    </p>
+
+    <div class="row g-4">
+        <!-- Example Student Life Highlights -->
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm">
+                <img src="clubs.jpg" class="card-img-top" alt="Student Clubs">
+                <div class="card-body">
+                    <h5 class="card-title">Clubs & Societies</h5>
+                    <p class="card-text">Join a community of like-minded peers passionate about coding, robotics, and innovation.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm">
+                <img src="competitions.jpg" class="card-img-top" alt="Competitions">
+                <div class="card-body">
+                    <h5 class="card-title">Competitions</h5>
+                    <p class="card-text">Showcase your skills in hackathons, programming challenges, and tech exhibitions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card border-0 shadow-sm">
+                <img src="recognition.jpg" class="card-img-top" alt="Recognition Programs">
+                <div class="card-body">
+                    <h5 class="card-title">Recognition Programs</h5>
+                    <p class="card-text">Earn awards and recognition for excellence in academics, innovation, and leadership.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2026 College of Information Technology. All Rights Reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
