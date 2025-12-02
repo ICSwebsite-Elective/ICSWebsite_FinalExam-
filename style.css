@@ -184,3 +184,11 @@ body.green-ninja-theme {
     object-fit: contain;
     filter: drop-shadow(0 8px 20px rgba(0,0,0,0.5));
 }
+
+/* --- Logo Size Fix --- */
+.logo-square {
+    width: 200px;       /* adjust to your preferred size */
+    height: 200px;      /* keeps it a perfect square */
+    object-fit: contain; /* prevents stretching or cropping */
+    padding: 10px;
+}
