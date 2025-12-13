@@ -17,6 +17,57 @@
     --ninja-accent: #98fb98;
 }
 
+
+
+.learnmore {
+    background-color: var(--ics-gold);
+    border: 1px solid var(--ics-gold);
+    color: #ffffff;
+}
+
+.learnmore:hover {
+    background-color: #007a4c;
+    border-color: #007a4c;
+    color: #ffffff;
+}
+
+
+.student-life-card {
+    border-top: 10px solid var(--ics-gold);
+    transition: background-color 0.3s ease;
+    background-color: rgba(0, 150, 94, 0.08);
+}
+
+
+.student-life-card:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+}
+section.container.my-5.text-center .lead1 {
+    font-size: 1.15rem;
+    font-weight: 400;
+    color: #555;
+    max-width: 750px;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+/* Full-width hero container */
+.hero-section1 {
+    width: 100vw;          /* force full viewport width */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Image must touch all edges */
+.hero-section1 img {
+    display: block;        /* removes inline gaps */
+    width: 100vw;          /* remove left/right gaps */
+    height: auto;
+    margin: 0;
+    padding: 0;
+    object-fit: contain;   /* keeps full image */
+}
 /* Page base */
 body {
     background-color: var(--dragon-bg);
@@ -177,6 +228,7 @@ body.green-ninja-theme {
     padding: 12px 25px;
     font-size: 1rem;
     border-radius: 8px;
+    color:#00965e; 
 }
 
 /* Right Image */
@@ -451,7 +503,7 @@ header section div {
 /* Contact Section Header */
 /* Contact Section Header */
 .contact-header {
-    color: #000000;  /* changed from green to black */
+    color: #ffffff;  /* changed from green to black */
     font-family: 'Merriweather', serif;
     font-size: 2rem;
     letter-spacing: 1px;
@@ -496,14 +548,11 @@ header section div {
    FOOTER
 -------------------------------------------------- */
 footer {
-    background: var(--ics-gold);
+    background: rgb(0, 0, 0);
     color: white;
     font-size: 0.9rem;
     letter-spacing: 0.5px;
 }
-
-
-
 
 
 
@@ -646,7 +695,7 @@ section.row p {
    FOOTER
 =========================== */
 footer {
-    background-color: #343a40;
+    background-color: #000000;
     color: #ffffff;
     text-align: center;
     padding: 20px 0;
@@ -694,3 +743,110 @@ footer {
     letter-spacing: 0.5px;
 }
 
+
+
+
+
+
+
+
+/* --------------------------------------------------
+   PAGE TITLES
+-------------------------------------------------- */
+.custom-panther-text {
+    font-family: 'Merriweather', serif;
+    color: #ffffff;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+section.text-center.my-5 p.lead {
+    color: #ffffff;
+}
+.custom-panther {
+    font-family: 'Merriweather', serif;
+    color: #000000;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+}
+
+
+/* Make large Bootstrap headings elegant */
+.display-3,
+.display-4 {
+    text-transform: uppercase;
+}
+
+
+
+body {
+    background: linear-gradient(
+        135deg,
+        #000000,
+        var(--ics-gold)
+    );
+}
+/* --------------------------------------------------
+   SECTION CARD STYLE (GLOBAL)
+-------------------------------------------------- */
+section.container,
+.LOGO {
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 50px 40px;
+    margin-top: 40px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+/* --------------------------------------------------
+   LOGO / SEAL SECTION
+-------------------------------------------------- */
+.LOGO {
+    text-align: center;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.LOGO img {
+    width: 230px;
+    margin-bottom: 30px;
+    filter: drop-shadow(0 6px 12px rgba(0,0,0,0.15));
+}
+
+.LOGO p {
+    font-size: 1.05rem;
+    line-height: 1.75;
+    color: #444;
+    margin-bottom: 16px;
+}
+
+/* --------------------------------------------------
+   ACADEMIC PROGRAM SECTION
+-------------------------------------------------- */
+.container p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    color: #333;
+}
+
+/* Bullet list enhancement */
+.container ul {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.container ul li {
+    font-size: 1.02rem;
+    padding: 8px 0;
+    color: #222;
+    position: relative;
+}
+
+
+/* --------------------------------------------------
+   SPACING BETWEEN MAJOR SECTIONS
+-------------------------------------------------- */
+section {
+    scroll-margin-top: 120px;
+}
