@@ -1,4 +1,6 @@
 :root{
+    
+    --ics-gold: #00965e;   /* active link color */
     --dragon-bg: #f0f8ff;
     --dragon-text: #00008b;
 
@@ -192,3 +194,503 @@ body.green-ninja-theme {
     object-fit: contain; /* prevents stretching or cropping */
     padding: 10px;
 }
+
+/* -------------------------------------------------- */
+/* NAVBAR */
+/* -------------------------------------------------- */
+
+.navbar {
+    background-color: var(--ics-dark) !important;
+    padding: 0.7rem 1.5rem; /* slightly tighter like screenshot */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+/* Brand */
+.navbar-brand {
+    color: #ffffff !important;
+    font-size: 1.35rem; /* minor refinement */
+    font-weight: 600;
+    letter-spacing: 0.8px;
+}
+
+/* Links */
+.navbar-nav .nav-link {
+    color: #cfd2d6 !important;
+    font-weight: 500;
+    margin-left: 1.2rem; /* more even spacing */
+    padding: 0.5rem 0;   /* ensures underline lines up */
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.navbar-nav .nav-link:hover {
+    color: #ffffff !important;
+}
+
+/* Underline animation (FIXED POSITION) */
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;            /* FIX: was too low */
+    width: 0%;
+    height: 2px;
+    background-color: var(--ics-gold);
+    transition: width 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Active link */
+.navbar-nav .nav-link.active {
+    color: var(--ics-gold) !important;
+    font-weight: 600;
+}
+
+.navbar-nav .nav-link.active::after {
+    width: 100%;
+}
+
+/* Dropdown */
+.navbar-nav .dropdown-menu {
+    background-color: #1a1f24;
+    border: none;
+    border-radius: 8px;
+    margin-top: 0.5rem; /* smoother drop */
+}
+
+.navbar-nav .dropdown-item {
+    color: #cfd2d6;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-nav .dropdown-item:hover {
+    background-color: rgba(0,150,94,0.15);
+    color: #ffffff;
+}
+
+/* Mobile toggle */
+.navbar-toggler {
+    border-color: rgba(255,255,255,0.25);
+}
+
+.navbar-toggler-icon {
+    filter: invert(1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------- */
+/*faculty
+/* -------------------------------------------------- */
+/* --------------------------------------------------
+   FONT + GLOBAL STYLE
+-------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* Gold Accent Theme */
+:root {
+    --ics-gold: #00965e;
+    --ics-dark: #1f1f1f;
+}
+.hero-section {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;          /* keeps full height ratio */
+    object-fit: contain;   /* shows full image without cropping */
+    display: block;
+}
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4); /* semi-transparent dark overlay */
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 90%;
+}
+
+.hero-overlay h1 {
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .hero-overlay h1 {
+        font-size: 2.5rem;
+    }
+    .hero-overlay p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+    .hero-overlay p {
+        font-size: 0.95rem;
+    }
+}
+
+
+
+
+/* --------------------------------------------------
+   HEADER HERO
+-------------------------------------------------- */
+header section img {
+    filter: brightness(70%);
+}
+
+header section div {
+    border-left: 5px solid var(--ics-gold);
+    border-right: 5px solid var(--ics-gold);
+    backdrop-filter: blur(5px);
+}
+
+.custom-panther-text {
+    font-family: 'Merriweather', serif;
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+
+/* --------------------------------------------------
+   FACULTY LAYOUT
+-------------------------------------------------- */
+.faculty-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border-top: 5px solid var(--ics-gold);
+}
+
+.faculty-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 6px 14px rgba(0,0,0,0.15);
+}
+
+.program-head-img {
+    width: 340px !important;
+    height: 450px !important;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.program-head {
+    border-top: 6px solid var(--ics-gold);
+}
+
+
+.faculty-card img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+/* Text Styling */
+.faculty-card h3, 
+.faculty-card h4 {
+    font-family: 'Merriweather', serif;
+     font-weight: bold;
+}
+
+
+
+.faculty-card p {
+    font-size: 0.95rem;
+    color: #555;
+}
+
+
+
+/* Contact Section Header */
+/* Contact Section Header */
+.contact-header {
+    color: #000000;  /* changed from green to black */
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+
+/* Contact Cards */
+.contact-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 4px solid var(--ics-gold);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Contact Images */
+.contact-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--ics-gold);
+}
+
+/* Links Styling */
+.contact-card a {
+    color: var(--ics-dark);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-card a:hover {
+    color: var(--ics-gold);
+}
+
+/* --------------------------------------------------
+   FOOTER
+-------------------------------------------------- */
+footer {
+    background: var(--ics-gold);
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* -------------------------------------------------- */
+/*sbo
+/* -------------------------------------------------- */
+
+/* ===========================
+   GENERAL STYLES
+=========================== */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap');
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+
+/* ===========================
+   HERO SECTION
+=========================== */
+.sbo-hero-container {
+    position: relative;
+    width: 100%;
+    display: inline-block; /* makes container fit image height */
+}
+
+.sbo-hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px; /* or adjust as needed */
+}/* SBO HERO HEADER - match faculty style */
+.sbo-hero-overlay {
+    position: absolute;
+    top: 50%;                  /* same vertical placement as faculty */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.4); /* transparent box */
+    padding: 20px;
+    max-width: 90%;
+    border-radius: 8px;
+}
+
+/* SBO HERO HEADER TEXT - same as faculty */
+.sbo-hero-overlay h1 {
+     font-size: 3rem;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.sbo-hero-overlay p {
+ font-size: 1.2rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+
+
+
+
+/* ===========================
+   LEADERS / FACULTY CARDS
+=========================== */
+.leader-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border-top: 5px solid #00965e; /* match your accent color */
+}
+
+.leader-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 6px 14px rgba(0,0,0,0.15);
+}
+
+.leader-card img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.leader-card h4 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;  /* bold for name */
+    margin-top: 10px;
+}
+
+.leader-card h5 {
+    font-family: 'Merriweather', serif;
+    font-weight: 500;  /* semi-bold for position */
+    margin-bottom: 10px;
+}
+
+.leader-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: #555;
+}
+
+section.row > div {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.row > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+section.row h4 {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #333333;
+}
+
+section.row p {
+    font-size: 0.95rem;
+    color: #555555;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 992px) {
+    section img {
+        height: 400px;
+    }
+
+    section h1 {
+        font-size: 2.5rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section img {
+        height: 300px;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 0.95rem;
+    }
+}
+
+footer {
+    background: #00965e;
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
+}
+
