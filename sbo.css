@@ -1,0 +1,121 @@
+/* ===========================
+   GENERAL STYLES
+=========================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* ===========================
+   NAVBAR
+=========================== */
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover, .nav-link.active {
+    color: #ffd700; /* gold accent */
+}
+
+/* ===========================
+   HERO SECTION
+=========================== */
+section img {
+    display: block;
+    width: 100%;
+    height: 550px;
+    object-fit: cover;
+}
+
+section div {
+    border-radius: 8px;
+}
+
+section h1 {
+    font-size: 3rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+}
+
+section p {
+    font-size: 1.2rem;
+}
+
+/* ===========================
+   LEADERS / FACULTY SECTION
+=========================== */
+section.row > div {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+section.row > div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+}
+
+section.row h4 {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #333333;
+}
+
+section.row p {
+    font-size: 0.95rem;
+    color: #555555;
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+footer {
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+@media (max-width: 992px) {
+    section img {
+        height: 400px;
+    }
+
+    section h1 {
+        font-size: 2.5rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section img {
+        height: 300px;
+    }
+
+    section h1 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 0.95rem;
+    }
+}

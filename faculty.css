@@ -12,7 +12,7 @@ body {
 
 /* Gold Accent Theme */
 :root {
-    --ics-gold: #c59d39;
+    --ics-gold: #00f21c;
     --ics-dark: #1f1f1f;
 }
 
@@ -98,6 +98,49 @@ header section div {
 .faculty-card p {
     font-size: 0.95rem;
     color: #555;
+}
+
+
+/* Contact Section Header */
+.contact-header {
+    color: var(--ics-gold);
+    font-family: 'Merriweather', serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+/* Contact Cards */
+.contact-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-top: 4px solid var(--ics-gold);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+/* Contact Images */
+.contact-img {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid var(--ics-gold);
+}
+
+/* Links Styling */
+.contact-card a {
+    color: var(--ics-dark);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-card a:hover {
+    color: var(--ics-gold);
 }
 
 /* --------------------------------------------------
