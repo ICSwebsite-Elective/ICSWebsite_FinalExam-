@@ -12,9 +12,66 @@ body {
 
 /* Gold Accent Theme */
 :root {
-    --ics-gold: #00f21c;
+    --ics-gold: #00965e;
     --ics-dark: #1f1f1f;
 }
+.hero-section {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-section img {
+    width: 100%;
+    height: auto;          /* keeps full height ratio */
+    object-fit: contain;   /* shows full image without cropping */
+    display: block;
+}
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.4); /* semi-transparent dark overlay */
+    padding: 20px 30px;
+    border-radius: 8px;
+    max-width: 90%;
+}
+
+.hero-overlay h1 {
+    font-size: 3rem;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+}
+
+.hero-overlay p {
+    font-size: 1.2rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+    .hero-overlay h1 {
+        font-size: 2.5rem;
+    }
+    .hero-overlay p {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-overlay h1 {
+        font-size: 2rem;
+    }
+    .hero-overlay p {
+        font-size: 0.95rem;
+    }
+}
+
 
 /* --------------------------------------------------
    NAVBAR
@@ -93,7 +150,10 @@ header section div {
 .faculty-card h3, 
 .faculty-card h4 {
     font-family: 'Merriweather', serif;
+     font-weight: bold;
 }
+
+
 
 .faculty-card p {
     font-size: 0.95rem;
@@ -101,13 +161,16 @@ header section div {
 }
 
 
+
+/* Contact Section Header */
 /* Contact Section Header */
 .contact-header {
-    color: var(--ics-gold);
+    color: #000000;  /* changed from green to black */
     font-family: 'Merriweather', serif;
     font-size: 2rem;
     letter-spacing: 1px;
 }
+
 
 /* Contact Cards */
 .contact-card {
@@ -147,7 +210,7 @@ header section div {
    FOOTER
 -------------------------------------------------- */
 footer {
-    background: var(--ics-dark);
+    background: var(--ics-gold);
     color: white;
     font-size: 0.9rem;
     letter-spacing: 0.5px;
