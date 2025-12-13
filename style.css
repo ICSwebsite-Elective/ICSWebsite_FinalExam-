@@ -4,7 +4,7 @@
 
     --panther-bg: #333;
     --panther-text: #f8f9fa;
-    --panther-accent: #ffd700;
+    --panther-accent: #020200;
 
     --kitty-bg: #fffacd;
     --kitty-text: #ffa500;
@@ -183,4 +183,12 @@ body.green-ninja-theme {
     max-width: 420px;
     object-fit: contain;
     filter: drop-shadow(0 8px 20px rgba(0,0,0,0.5));
+}
+
+/* --- Logo Size Fix --- */
+.logo-square {
+    width: 200px;       /* adjust to your preferred size */
+    height: 200px;      /* keeps it a perfect square */
+    object-fit: contain; /* prevents stretching or cropping */
+    padding: 10px;
 }
