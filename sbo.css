@@ -1,6 +1,8 @@
 /* ===========================
    GENERAL STYLES
 =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;600;700&family=Poppins:wght@300;500;700&display=swap');
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f8f9fa;
@@ -28,29 +30,91 @@ body {
 /* ===========================
    HERO SECTION
 =========================== */
-section img {
-    display: block;
+.sbo-hero-container {
+    position: relative;
     width: 100%;
-    height: 550px;
-    object-fit: cover;
+    display: inline-block; /* makes container fit image height */
 }
 
-section div {
+.sbo-hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-top: 20px; /* or adjust as needed */
+}/* SBO HERO HEADER - match faculty style */
+.sbo-hero-overlay {
+    position: absolute;
+    top: 50%;                  /* same vertical placement as faculty */
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0,0,0,0.4); /* transparent box */
+    padding: 20px;
+    max-width: 90%;
     border-radius: 8px;
 }
 
-section h1 {
-    font-size: 3rem;
-    text-shadow: 2px 2px 5px rgba(0,0,0,0.7);
+/* SBO HERO HEADER TEXT - same as faculty */
+.sbo-hero-overlay h1 {
+     font-size: 3rem;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
 }
 
-section p {
-    font-size: 1.2rem;
+.sbo-hero-overlay p {
+ font-size: 1.2rem;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
 }
+
+
+
+
 
 /* ===========================
-   LEADERS / FACULTY SECTION
+   LEADERS / FACULTY CARDS
 =========================== */
+.leader-card {
+    background: white;
+    border-radius: 10px;
+    padding: 20px 15px;
+    box-shadow: 0px 4px 8px rgba(0,0,0,0.08);
+    transition: 0.3s;
+    border-top: 5px solid #00965e; /* match your accent color */
+}
+
+.leader-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0px 6px 14px rgba(0,0,0,0.15);
+}
+
+.leader-card img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.leader-card h4 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;  /* bold for name */
+    margin-top: 10px;
+}
+
+.leader-card h5 {
+    font-family: 'Merriweather', serif;
+    font-weight: 500;  /* semi-bold for position */
+    margin-bottom: 10px;
+}
+
+.leader-card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.95rem;
+    color: #555;
+}
+
 section.row > div {
     background-color: #ffffff;
     padding: 15px;
@@ -118,4 +182,11 @@ footer p {
     section p {
         font-size: 0.95rem;
     }
+}
+
+footer {
+    background: #00965e;
+    color: white;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
 }
