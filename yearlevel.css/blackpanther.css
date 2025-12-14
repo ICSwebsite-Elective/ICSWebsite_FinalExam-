@@ -1,0 +1,68 @@
+/* SECTION BACKGROUND */
+.mission-section {
+  min-height: 100vh;
+  background: linear-gradient(to right, #001f14, #014d33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* MAIN CONTAINER */
+.mission-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* SHARED CARD STYLE */
+.mission-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* LEFT CARD (LOGO) */
+.logo-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* RIGHT CARD (TEXT) */
+.text-card {
+  flex: 1.5;
+}
+
+.text-card h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.text-card p {
+  background: #d9dee3;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* RESPONSIVE (MOBILE) */
+@media (max-width: 768px) {
+  .mission-container {
+    flex-direction: column;
+  }
+
+  .text-card h2 {
+    text-align: center;
+  }
+}

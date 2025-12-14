@@ -23,6 +23,7 @@
     background-color: var(--ics-gold);
     border: 1px solid var(--ics-gold);
     color: #ffffff;
+    border-radius: 5px;
 }
 
 .learnmore:hover {
@@ -333,6 +334,75 @@ body.green-ninja-theme {
 .navbar-toggler-icon {
     filter: invert(1);
 }
+/* SECTION BACKGROUND */
+.mission-section {
+  min-height: 100vh;
+  background: linear-gradient(to right, #001f14, #014d33);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+/* MAIN CONTAINER */
+.mission-container {
+  display: flex;
+  gap: 30px;
+  max-width: 1100px;
+  width: 100%;
+}
+
+/* SHARED CARD STYLE */
+.mission-card {
+  background: #ffffff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* LEFT CARD (LOGO) */
+.logo-card {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-card img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* RIGHT CARD (TEXT) */
+.text-card {
+  flex: 1.5;
+}
+
+.text-card h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.text-card p {
+  background: #d9dee3;
+  padding: 20px;
+  border-radius: 10px;
+  line-height: 1.7;
+  color: #333;
+}
+
+/* RESPONSIVE (MOBILE) */
+@media (max-width: 768px) {
+  .mission-container {
+    flex-direction: column;
+  }
+
+  .text-card h2 {
+    text-align: center;
+  }
+}
+
 
 
 
@@ -806,12 +876,14 @@ section.container,
     max-width: 900px;
     margin-left: auto;
     margin-right: auto;
+    
 }
 
 .LOGO img {
     width: 230px;
     margin-bottom: 30px;
     filter: drop-shadow(0 6px 12px rgba(0,0,0,0.15));
+    
 }
 
 .LOGO p {
@@ -819,6 +891,7 @@ section.container,
     line-height: 1.75;
     color: #444;
     margin-bottom: 16px;
+    
 }
 
 /* --------------------------------------------------
@@ -850,3 +923,146 @@ section.container,
 section {
     scroll-margin-top: 120px;
 }
+.mission-text {
+    display: flex;
+    flex-direction: column;  /* stack heading and text */
+    align-items: center;      /* keep block centered horizontally */
+    margin-left: 100px;        /* nudge the whole block slightly to the right */
+}
+
+/* Heading */
+.mission-title {
+    font-size: 2rem;         
+    font-weight: 700;
+    text-align: center;       /* center heading text */
+    margin-bottom: 15px;
+}
+
+/* Mission text */
+.mission-box {
+    max-width: 650px;        /* limit width */
+    font-size: 1.4rem;       
+    line-height: 1.6;       
+    text-align: center;       /* center paragraph text */
+    color: #000;
+    
+}
+.mission-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;      /* centers text in small screens */
+    margin: 0 auto;
+}
+
+.mission-title {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;       /* centers heading on small screens */
+    margin-bottom: 15px;
+}
+
+.mission-box {
+    max-width: 100%;
+    font-size: 1.5rem;
+    line-height: 1.6;
+    text-align: justify;      /* makes text neat */
+    color: #000;
+    
+}
+
+/* Optional: make it responsive */
+@media (max-width: 992px) {
+    .mission-text {
+        align-items: center;  /* center text on tablets/small screens */
+        text-align: center;
+    }
+}
+/*ubos*/
+    section h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 30px;
+        text-align: center;
+        color: #fff; /* heading text color */
+    }
+
+    /* Logo Images */
+    .logo-square {
+        max-width: 500px;       /* controls image size */
+        height: auto;
+        border-radius: 12px;    
+        box-shadow: 0 5px 15px rgba(255, 255, 255, 100); /* subtle shadow */
+    }
+
+    /* Logo Captions */
+    .col-md-4 p {
+        font-weight: 500;
+        margin-top: 10px;
+        color: #fff; /* caption text color */
+    }
+
+    /* Center the content in left and right columns */
+    .col-md-4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+
+    /* New middle column styles for .col-md-6.text-start */
+    .col-md-6.text-start {
+    text-align: justify !important;  /* enforce justification */
+    font-size: 1.5rem;
+    line-height: 1.6;
+    color: #fff;
+    padding: 0;
+    background: none;
+    border-radius: 0;
+    display: block;   /* ensure flex parent doesn’t interfere */
+    transform: translateY(110px);
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 992px) {
+        .row.align-items-center.text-center {
+            text-align: center;
+        }
+
+        .col-md-4.text-start {
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        .col-md-6.text-start {
+            text-align: center;
+            font-size: 1.2rem;
+            padding: 15px 10px;
+        }
+
+        .logo-square {
+            max-width: 120px;
+            margin-bottom: 15px;
+        }
+    }
+      /* Move ONLY the middle text container down */
+.col-md-6.text-start {
+    transform: translateY(110px);
+    
+}
+.officers-section p {
+    text-align: center;  /* centers all text inside the section */
+    color: #ffffff;      /* makes text white */
+    margin: 30px 0;      /* optional spacing above and below */
+    font-size: 1.5rem;   /* adjust font size if needed */
+    line-height: 1.6;    /* spacing between lines */
+}
+
+
+
+
+
+        
+    
+
